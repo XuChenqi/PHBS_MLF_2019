@@ -9,4 +9,4 @@ E-commerce has gradually become an essential part of our daily life. In 2019, Ch
 Our team obtained Taobao's consumer behavior data from Tianchi, AliCloud, starting from November 18, 2014 to December 18, 2014. And this dataset includes six basic indicators. Based on that, we derived a series of other indicators which help interprete the consumer behaviors, and performed corresponding data preprocessing. After that, we comprehensively conducted LR, SVM, Decision Tree, Random Forest. Based on our machine learning models, we are able to interprete and predict consumer behavior well, on December 19, 2014.
 ## Data
 Our data is from Tianchi, AliCloud, starting from November 18, 2014 to December 18, 2014. Inclouding 6 basic indicators, user id, item id, behavior type (Browse, collect, purchase, etc.), user geohash (location), item category and time.</p>
-For detailed data, see our data folder.
+For detailed data, see our [data](https://disk.pku.edu.cn:443/link/2B3214E55199700FDB7D21C86F93A9E7 Valid Until: 2020-05-07 23:59) in PKU Cloud.
