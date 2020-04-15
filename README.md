@@ -19,6 +19,7 @@ behavior_type|the classification of user behavior|browing, collecting, adding in
 user_geohash|the location of the user|can be null
 item_category|the category of one certain item|
 time|time when behaving| precised to hour
+
 For example, **141278390,282725298,1,95jnuqm,5027,2014-11-18 08**.</p>
 The other file is about all the items, inclouding **3 basic indicators**, item id, item geohash (location), item category.</p>
 Name|Meaning|Explain
@@ -26,6 +27,7 @@ Name|Meaning|Explain
 item_id|the unique item identidication|
 item_geohash|the location of the item|can be numm
 item_category|the category of one certain item|
+
 For example, **117151719,96ulbnj,7350**.</p>
 For detailed data, see our [data](https://disk.pku.edu.cn:443/link/2B3214E55199700FDB7D21C86F93A9E7) in PKU Cloud.
 ## Overall Analysis
