@@ -68,7 +68,7 @@ And for each feature class, like user features, the features it contains can be 
 3. Time features: Features that involve time.
 ## Model Building
 ### Up-Sampling & Down-Sampling
-Through statistics, we have a total of 279525 samples, while the number of samples with the "label =1" (having the behavior of buying item)is only 1529.The ratio of samples with "label=1" and "label=0" is around 1:190. In order to eliminate the impact of data imbalance on the model results, we upscaled the data with "label=1" and also downscaled the data with "label=0" in the training set.In the end, the ratio of samples with "label=1" and "label=0" is around 1:10.
+Through statistics, we have a total of 279,525 samples, while the number of samples with the "label =1" (having the behavior of buying item)is only 1,529.The ratio of samples with "label=1" and "label=0" is around 1:190. In order to eliminate the impact of data imbalance on the model results, we upscaled the data with "label=1" and also downscaled the data with "label=0" in the training set.In the end, the ratio of samples with "label=1" and "label=0" is around 1:10.
 ## Metrics
 
 ## Future Work
