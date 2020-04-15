@@ -22,19 +22,17 @@ time|time when behaving| precised to hour
 
 For example, **141278390,282725298,1,95jnuqm,5027,2014-11-18 08**.</p>
 The other file is about all the items, inclouding **3 basic indicators**, item id, item geohash (location), item category.</p>
-<div align="center">
 Name|Meaning|Explain
 :---:|:---:|:---:
 item_id|the unique item identidication|
 item_geohash|the location of the item|can be numm
 item_category|the category of one certain item|
-</div>
 
 For example, **117151719,96ulbnj,7350**.</p>
 For detailed data, see our [data](https://disk.pku.edu.cn:443/link/2B3214E55199700FDB7D21C86F93A9E7) in PKU Cloud.
 ## Overall Analysis
 ### Problem Type: Classification
-**'Purcahse'** correspodning to **'1'**, and **'Not Purchase'** corresponding to **'0'**</p>
+**'Prucahse'** correspodning to **'1'**, and **'Not Purchase'** corresponding to **'0'**</p>
 Particularity of the problem:
 1. The label is not just for one user or one item, but for one user-item pair **(user, item)**, which influence the selection of training set and test set
 2. This is cross-sectional problem. For example, for one user-item pair, its label is derived from the bahevior of 18th, while its features are derived from days before 18th. That is because we can only the past to predict the future.
@@ -66,9 +64,37 @@ And for each feature class, like user features, the features it contains can be 
 1. Satistic features: Obtained by directly counting the number of certain event.
 2. Ratio features: Ratio between two satistic features.
 3. Time features: Features that involve time.
+### Basic Features
+1. User features (Feature type = 1):
+Feature name| type | Explaination
+---|--|--
+1_user_activity|statictic|number of user actions in the two days
+1_number_of_items_related|statictic|number of items that the user had interactions with in the two days
+1_number_of_browsing_actions|statictic|number of browsing actions in the two days
+1_number_of_collecting_actions|statictic|number of collecting actions in the two days
+1_number_of_carting_actions|statictic|number of adding into the cart actions in the two days
+1_number_of_buying_actions|statictic|number of purchasing actions in the two days
+1_behavior_pattern|statictic|1 as dirctly buying, 0 as collecting or adding into cart before buying and -1 as not buying
+1_ratio_of_browsing_actions|ratio|ratio between number of browsing actions and number of all actions
+1_ratio_of_collecting_actions|ratio|ratio between number of collecting actions and number of all actions
+1_ratio_of_carting_actions|ratio|ratio between number of adding into cart actions and number of all actions
+1_ratio_of_buying_actions|ratio|ratio between number of purchasing actions and number of all actions
+1_conveting_rate|ratio|ratio between number of items finally purchased and number of all items related
+1_first_time_online|time|the time lag between first online and the 0 o'clock on the prediction day
+1_last_time_online|time|the time lag between last online and the 0 o'clock on the prediction day
+1_time_lag|time|the time lag between first online and last time online
+1_the_behavior_frequency|time|time lag over the total number of activities
+
+2. Item features (Feature type = 1):
+3. Category features (Feature type = 3):
+Feature name| type | Explaination
+---|--|--
+3_number_of_categories_related|statictic|number of categories that user had interaction with
+3_category_concentration_rate|ratio|number of items related over number of categories related
+
+4. Geo features (Feature type = 4):
 ## Model Building
-### Up-Sampling & Down-Sampling
-Through statistics, we have a total of 279,525 samples, while the number of samples with the "label =1" (**'Purcahse'**)is only 1,529.The ratio of samples with "label=1" and "label=0" is around 1:190. In order to eliminate the impact of data imbalance on the model results, we upscaled the data with "label=1" and also downscaled the data with "label=0" in the training set.In the end, the ratio of samples with "label=1" and "label=0" is around 1:10.
+
 ## Metrics
 
 ## Future Work
