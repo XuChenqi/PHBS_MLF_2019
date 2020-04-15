@@ -23,12 +23,15 @@ Since we will use the information before 18th to predict the user behavior in 18
 ### Test Set
 Three ways to choose test set:</p>
 1. ~~All users and all items:~~
-![Test_Set_Selection_1](https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/Test_Set_Selection_1.png)
+![Test Set Selection 1](https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/Test_Set_Selection_1.png)
 2. ~~Users who have certain behaviors and the items that users has interactions with in the two days before :~~
+![Test Set Selection 2](https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/Test_Set_Selection_2.png)
 3. For each user who was active before, only condider the items that he has interactions with:
+![Test Set Selection 3](https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/Test_Set_Selection_3.png)
 ### Train Set
 The basic rules all the same for train set. Two things to consider:</p>
 1. As customary, we set the ratio between the training set and the test set to be 4:1. So since we have choose **(16, 17 | 18)** as the test set (before '|', the features of test set; after '|', the labels of the test set), we need to choose another four group.
 2. If we count back from 18th, the abnormal comsumption in 12th, December will distrurb our model greatly, so we need to skip that when choose the train set.
 
 The overall process is shon below, and related data that has been processed is in our [Data](https://github.com/Parametric3/PHBS_MLF_2019/tree/master/Data) folder.
+![OveralL Process](https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/OveralL_Process.png)
