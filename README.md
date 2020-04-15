@@ -100,43 +100,43 @@ Feature name| type | Explaination
 ### Interactive Features
 
 ## Model Building
-Imbalanced Sample: Up&downsampling
-1. Lasso Logistic Regression
-Use L1 regularization to achieve variable selection
-result
+Imbalanced Sample: Up&downsampling</p>
+1. Lasso Logistic Regression</p>
+Use L1 regularization to achieve variable selection</p>
+result</p>
 2. PCA + Logistic Regression
-Choose n principle components can explain more than 90% of the variance in the model, then do Logistic Regression
-pca gragh
-3. SVM
-4. Random Forest--bagging
-show important features
-5. GBRT (Gradient Boost Regression Tree)--boosting
-6. RF+GBRT
-Combination1
-a. Use RF to train, output is y_rf;
-b. Use GBRT to train under y-y_rf;
-c. Use the average of a&b when predict.
+Choose n principle components can explain more than 90% of the variance in the model, then do Logistic Regression</p>
+pca gragh</p>
+3. SVM</p>
+4. Random Forest--bagging</p>
+show important features</p>
+5. GBRT (Gradient Boost Regression Tree)--boosting</p>
+6. RF+GBRT</p>
+Combination1</p>
+a. Use RF to train, output is y_rf;</p>
+b. Use GBRT to train under y-y_rf;</p>
+c. Use the average of a&b when predict.</p>
 <div align="center">
 <img src="https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/RF+GBRT1.png" height="330" width="850"/>
 </div>
 
-Combination2
-a. Use RF to get random features;
-b. Use GBRT for those features;
-c. Use the average of multiple GBRT outputs when predict.
+Combination2</p>
+a. Use RF to get random features;</p>
+b. Use GBRT for those features;</p>
+c. Use the average of multiple GBRT outputs when predict.</p>
 <div align="center">
 <img src="https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/RF+GBRT2.png" height="330" width="450"/>
 </div>
 
-6. GBRT+LR
-Stucture/depth/learning rate/iteration are decided by Gredient Search
+6. GBRT+LR</p>
+Stucture/depth/learning rate/iteration are decided by Gredient Search</p>
 <div align="center">
 <img src="https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/LR+GBRT.png" height="330" width="650"/>
 </div>
 
 ## Metrics
-ROC curve
-AUC
+ROC curve</p>
+AUC</p>
 ## Future Work
-1. Introduce interaction terms;
-2. Optimize the parameters in the model;
+1. Introduce interaction terms;</p>
+2. Optimize the parameters in the model;</p>
