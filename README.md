@@ -100,6 +100,7 @@ Feature name| type | Explaination
 ### Interactive Features
 
 ## Model Building
+Imbalanced Sample: Up&downsampling
 1. Lasso Logistic Regression
 Use L1 regularization to achieve variable selection
 result
