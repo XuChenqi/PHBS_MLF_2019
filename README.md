@@ -23,6 +23,7 @@ Since we will use the information before 18th to predict the user behavior in 18
 ### Test Set
 Three ways to choose test set:</p>
 1. ~~All users and all items:~~
+![Test_Set_Selection_1](https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/Test_Set_Selection_1.png)
 2. ~~Users who have certain behaviors and the items that users has interactions with in the two days before :~~
 3. For each user who was active before, only condider the items that he has interactions with:
 ### Train Set
