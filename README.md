@@ -88,6 +88,7 @@ Feature name| type | Explaination
 
 2. Item features (Feature type = 1):
 3. Category features (Feature type = 3):
+
 Feature name| type | Explaination
 ---|---|---
 3_number_of_categories_related|statictic|number of categories that user had interaction with
