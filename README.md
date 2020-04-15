@@ -34,7 +34,7 @@ For example, **117151719,96ulbnj,7350**.</p>
 For detailed data, see our [data](https://disk.pku.edu.cn:443/link/2B3214E55199700FDB7D21C86F93A9E7) in PKU Cloud.
 ## Overall Analysis
 ### Problem Type: Classification
-**'Prucahse'** correspodning to **'1'**, and **'Not Purchase'** corresponding to **'0'**</p>
+**'Purcahse'** correspodning to **'1'**, and **'Not Purchase'** corresponding to **'0'**</p>
 Particularity of the problem:
 1. The label is not just for one user or one item, but for one user-item pair **(user, item)**, which influence the selection of training set and test set
 2. This is cross-sectional problem. For example, for one user-item pair, its label is derived from the bahevior of 18th, while its features are derived from days before 18th. That is because we can only the past to predict the future.
@@ -68,7 +68,7 @@ And for each feature class, like user features, the features it contains can be 
 3. Time features: Features that involve time.
 ## Model Building
 ### Up-Sampling & Down-Sampling
-Through statistics, we have a total of 279,525 samples, while the number of samples with the "label =1" (having the behavior of buying item)is only 1,529.The ratio of samples with "label=1" and "label=0" is around 1:190. In order to eliminate the impact of data imbalance on the model results, we upscaled the data with "label=1" and also downscaled the data with "label=0" in the training set.In the end, the ratio of samples with "label=1" and "label=0" is around 1:10.
+Through statistics, we have a total of 279,525 samples, while the number of samples with the "label =1" (**'Purcahse'**)is only 1,529.The ratio of samples with "label=1" and "label=0" is around 1:190. In order to eliminate the impact of data imbalance on the model results, we upscaled the data with "label=1" and also downscaled the data with "label=0" in the training set.In the end, the ratio of samples with "label=1" and "label=0" is around 1:10.
 ## Metrics
 
 ## Future Work
