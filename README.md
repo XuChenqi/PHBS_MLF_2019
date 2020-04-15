@@ -100,7 +100,15 @@ Feature name| type | Explaination
 ### Interactive Features
 
 ## Model Building
-
+1. Lasso Logistic Regression
+2. PCA + Logistic Regression
+n principle components can explain more than 90% of the variance in the model
+3. SVM
+3. Random Forest--bagging
+4. GBRT (Gradient Boost Regression Tree)--boosting
+<div align="center">
+<img src="https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/RF+GBRT.png" height="330" width="450"/>
+</div>
 ## Metrics
 
 ## Future Work
