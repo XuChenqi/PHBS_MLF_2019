@@ -25,7 +25,7 @@ The other file is about all the items, inclouding **3 basic indicators**, item i
 Name|Meaning|Explain
 :---:|:---:|:---:
 item_id|the unique item identidication|
-item_geohash|the location of the item|can be numm
+item_geohash|the location of the item|can be null
 item_category|the category of one certain item|
 
 For example, **117151719,96ulbnj,7350**.</p>
@@ -66,8 +66,9 @@ And for each feature class, like user features, the features it contains can be 
 3. Time features: Features that involve time.
 ### Basic Features
 1. User features (Feature type = 1):
+
 Feature name| type | Explaination
----|--|--
+---|---|---
 1_user_activity|statictic|number of user actions in the two days
 1_number_of_items_related|statictic|number of items that the user had interactions with in the two days
 1_number_of_browsing_actions|statictic|number of browsing actions in the two days
@@ -88,7 +89,7 @@ Feature name| type | Explaination
 2. Item features (Feature type = 1):
 3. Category features (Feature type = 3):
 Feature name| type | Explaination
----|--|--
+---|---|---
 3_number_of_categories_related|statictic|number of categories that user had interaction with
 3_category_concentration_rate|ratio|number of items related over number of categories related
 
