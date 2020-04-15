@@ -60,6 +60,7 @@ The overall process is shon below, and related data that has been processed is i
 All the features can be dicided into two levels:
 1. Basic features, which usually involves one indicator in the original file;
 2. Interactive features, which involves two or moe original indicators.
+
 And for each feature class, like user features, the features it contains can be divided into three tyoes:
 1. Satistic features: Obtained by directly counting the number of certain event.
 2. Ratio features: Ratio between two satistic features.
