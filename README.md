@@ -45,6 +45,7 @@ Three ways to choose test set:</p>
 2. ~~Users who have certain behaviors and the items that users has interactions with in the two days before :~~
 ![Test Set Selection 2](https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/Test_Set_Selection_2.png)
 3. For each user who was active before, only condider the items that he has interactions with:
+<img style="width:50px;height:50px" src="https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/Test_Set_Selection_3.png" align=center />
 ![Test Set Selection 3](https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/Test_Set_Selection_3.png)
 ### Train Set
 The basic rules all the same for train set. Two things to consider:</p>
