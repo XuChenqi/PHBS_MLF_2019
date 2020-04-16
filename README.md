@@ -125,7 +125,10 @@ Feature name| type | Explaination
 
 Feature name| type | Explaination
 ---|---|---
-
+4_geo_purchasepower|ratio| ratio of the number of goods purchased in the area to the total number of users in the area
+4_geo_buyview|ratio| ratio of the number of goods purchased in the area to the number of goods viewed in the area
+4_geo_buycollect|ratio|ratio of the number of goods purchased in the area to the number of goods collected in the area
+4_geo_buyadd|ratio|ratio of the number of goods purchased in the area to the number of goods carted in the area
 
 ### Interactive Features
 
