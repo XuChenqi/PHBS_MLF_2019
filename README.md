@@ -70,13 +70,13 @@ And for each feature class, like user features, the features it contains can be 
 
 Feature name| type | Explaination
 ---|---|---
-1_user_activity|statictic|number of user actions in the two days
-1_number_of_items_related|statictic|number of items that the user had interactions with in the two days
-1_number_of_browsing_actions|statictic|number of browsing actions in the two days
-1_number_of_collecting_actions|statictic|number of collecting actions in the two days
-1_number_of_carting_actions|statictic|number of adding into the cart actions in the two days
-1_number_of_buying_actions|statictic|number of purchasing actions in the two days
-1_behavior_pattern|statictic|1 as dirctly buying, 0 as collecting or adding into cart before buying and -1 as not buying
+1_user_activity|statistic|number of user actions in the two days
+1_number_of_items_related|statistic|number of items that the user had interactions with in the two days
+1_number_of_browsing_actions|statistic|number of browsing actions in the two days
+1_number_of_collecting_actions|statistic|number of collecting actions in the two days
+1_number_of_carting_actions|statistic|number of adding into the cart actions in the two days
+1_number_of_buying_actions|statistic|number of purchasing actions in the two days
+1_behavior_pattern|statistic|1 as dirctly buying, 0 as collecting or adding into cart before buying and -1 as not buying
 1_ratio_of_browsing_actions|ratio|ratio between number of browsing actions and number of all actions
 1_ratio_of_collecting_actions|ratio|ratio between number of collecting actions and number of all actions
 1_ratio_of_carting_actions|ratio|ratio between number of adding into cart actions and number of all actions
@@ -92,7 +92,7 @@ Feature name| type | Explaination
 
 Feature name| type | Explaination
 ---|---|---
-3_number_of_categories_related|statictic|number of categories that user had interaction with
+3_number_of_categories_related|statistic|number of categories that user had interaction with
 3_category_concentration_rate|ratio|number of items related over number of categories related
 
 4. Geo features (Feature type = 4):
