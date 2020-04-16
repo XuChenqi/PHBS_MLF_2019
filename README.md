@@ -99,7 +99,7 @@ Feature name| type | Explaination
 2_item_frequentviewpeople|statistic| number of users who viewed the product multiple times in the two days
 2_item_collect|statistic| number of times the product was collected in the two days
 2_item_collectpeople|statistic|number of users who collected the product in the two days (the number of people who have been deduplicated)
-2_item_frequentcollectpeople|number of users who collected the product multiple times in the two days
+2_item_frequentcollectpeople|statistic|number of users who collected the product multiple times in the two days
 2_item_add|statistic| number of times the product was carted in the two days
 2_item_addpeople|statistic|number of users who carted the product (the number of people who have been deduplicated in the two days)
 2_item_frequentaddpeople|statistic|number of users who carted the product multiple times in the two days
