@@ -109,9 +109,12 @@ result</p>
 Choose n principle components can explain more than 90% of the variance in the model, then do Logistic Regression</p>
 pca gragh</p>
 ### 3. SVM</p>
+
 ### 4. Random Forest--bagging</p>
 show important features</p>
+
 ### 5. GBRT (Gradient Boost Regression Tree)--boosting</p>
+
 ### 6. RF+GBRT</p>
 **Combination1**</p>
 a. Use RF to train, output is y_rf;</p>
@@ -129,7 +132,7 @@ c. Use the average of multiple GBRT outputs when predict.</p>
 <img src="https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/RF+GBRT2.png" height="330" width="450"/>
 </div>
 
-6. GBRT+LR</p>
+###7. GBRT+LR</p>
 Stucture/depth/learning rate/iteration are decided by Gredient Search</p>
 <div align="center">
 <img src="https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/LR+GBRT.png" height="330" width="650"/>
