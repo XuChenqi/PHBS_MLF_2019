@@ -100,20 +100,20 @@ Feature name| type | Explaination
 ### Interactive Features
 
 ## Model Building
-Imbalanced Sample: Up&downsampling</p>
-Through statistics, we have a total of 279,525 samples, while the number of samples with the "label=1"(**'Purchase'**) is only 1,529. The ratio of samples with "label=1" and 'label=0' is around 1:190. In order to eliminate the impact of data imbance on the model results, we upscaled the data with "label=1" and also downscaled the data with "label=0" in the training set. In the end, the ratio of samples with "label=1" and "label=0" is around 1:10. 
-1. Lasso Logistic Regression</p>
+### Imbalanced Sample: Up&downsampling</p>
+Through statistics, we have a total of 279,525 samples, while the number of samples with the "label=1"(**'Purchase'**) is only 1,529. The ratio of samples with "label=1" and 'label=0' is around 1:190. In order to eliminate the impact of data imbance on the model results, we upscaled the data with "label=1" and also downscaled the data with "label=0" in the training set. In the end, the ratio of samples with "label=1" and "label=0" is around 1:10.</p>
+### 1. Lasso Logistic Regression</p>
 Use L1 regularization to achieve variable selection</p>
 result</p>
-2. PCA + Logistic Regression
+### 2. PCA + Logistic Regression
 Choose n principle components can explain more than 90% of the variance in the model, then do Logistic Regression</p>
 pca gragh</p>
-3. SVM</p>
-4. Random Forest--bagging</p>
+### 3. SVM</p>
+### 4. Random Forest--bagging</p>
 show important features</p>
-5. GBRT (Gradient Boost Regression Tree)--boosting</p>
-6. RF+GBRT</p>
-Combination1</p>
+### 5. GBRT (Gradient Boost Regression Tree)--boosting</p>
+### 6. RF+GBRT</p>
+**Combination1**</p>
 a. Use RF to train, output is y_rf;</p>
 b. Use GBRT to train under y-y_rf;</p>
 c. Use the average of a&b when predict.</p>
@@ -121,7 +121,7 @@ c. Use the average of a&b when predict.</p>
 <img src="https://raw.githubusercontent.com/Parametric3/PHBS_MLF_2019/master/Figs/RF+GBRT1.png" height="330" width="850"/>
 </div>
 
-Combination2</p>
+**Combination2**</p>
 a. Use RF to get random features;</p>
 b. Use GBRT for those features;</p>
 c. Use the average of multiple GBRT outputs when predict.</p>
