@@ -101,6 +101,7 @@ Feature name| type | Explaination
 
 ## Model Building
 Imbalanced Sample: Up&downsampling</p>
+Through statistics, we have a total of 279,525 samples, while the number of samples with the "label=1"(**'Purchase'**) is only 1,529. The ratio of samples with "label=1" and 'label=0' is around 1:190. In order to eliminate the impact of data imbance on the model results, we upscaled the data with "label=1" and also downscaled the data with "label=0" in the training set. In the end, the ratio of samples with "label=1" and "label=0" is around 1:10. 
 1. Lasso Logistic Regression</p>
 Use L1 regularization to achieve variable selection</p>
 result</p>
